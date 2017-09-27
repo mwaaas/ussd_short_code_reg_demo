@@ -47,7 +47,7 @@ function sendUrlToKong(url, code) {
     var data = {
       name: code,
       uris: "/" + code,
-      upstream_url: url
+      upstream_url: url + "/ussd/"
     };
     $.post(postUrl, data, function (data, status) {
       res({
